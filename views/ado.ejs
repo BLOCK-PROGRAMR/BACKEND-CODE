@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Audio Files</title>
+</head>
+<body>
+  <h1>Audio Files</h1>
+<ul>
+   <% data.forEach(data=> { %>
+
+        <li><%= data.name %></li>
+      
+       <audio controls src="data:audio/mp3;base64,<%= data.audio %>" >
+          Your browser does not support the audio element.
+        </audio>   
+      
+    <% }) %>
+  </ul>
+   
+</body>
+</html>
+
+  

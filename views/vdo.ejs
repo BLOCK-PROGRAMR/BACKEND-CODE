@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>video ejs</title>
+</head>
+<body>
+    <h1>all videos here....</h1>
+       <h1><%= data.name%></h1>
+        <% var buff=data.video.toString("base64") %>
+        <video controls>
+            <source src="data:video/mp4;base64,<%= buff%>" type="video/mp4">
+            <source src="data:video/webm;base64,<%= buff%>" type="video/webm">
+        </video>
+
+</body>
+</html>
